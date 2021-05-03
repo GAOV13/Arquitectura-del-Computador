@@ -25,7 +25,8 @@ def main():
             valor = input("Escriba una posición de la memoria que quiera leer: ")
             try:
                 valor = int(valor)
-                if valor >= 0 and valor <= 2048: leer_cache(valor)
+                if valor >= 0 and valor <= 2048: 
+                    print("El dato en la posición {} es {}".format(valor, leer_cache(valor)))
                 else: print("No se ingreso una posición de memoria valida")
             except: print("No ingreso un valor numerico")
         elif x == "2":

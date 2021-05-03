@@ -56,14 +56,10 @@ cache = [
 ]
 
 def transformacion(numero):
-    print(numero)
     numero = bin(numero)[2:].zfill(16)
-    print(numero)
     index = int(numero[16-7:16-3], 2) 
     tag = "0x" + hex(int(numero[:16-7], 2))[2:].zfill(3)
     offset = int(numero[16-3:], 2)
-    print(numero)
-    print("{} {} {}".format(tag, index, offset))
     return (index, tag, offset)
 
 def verificarMiss(numero):
@@ -83,7 +79,6 @@ def traer_cache(pos, index, tag):
     cache[pos][index]["bit_sucio"] == 0
     cache[pos][index]["validez"] = 1
     cache[pos][index]["tag"] = tag
-    #Hay que leer en la memoria las 8 posiciones
     cache[pos][index]["data"] = traer_datos_ram(index, tag)
 
 # Interfaz
@@ -99,6 +94,13 @@ def leer_cache(numero):
     return cache[pos][index]["data"][offset]
 
 def general(numero):
+    global cache
     ver, pos, index, tag, offset = verificarMiss(numero)
     if not ver: traer_cache(pos, index, tag)
+    f = open("output.txt", "w")
+    for conjunto in cache:
+        f.write("Estos son los datos del conjunto\n")
+        for posicion in conjunto:
+            f.write(str(posicion) + " " + str(conjunto[posicion]) + "\n")
+    f.close()
     return pos, index, offset
