@@ -52,7 +52,7 @@ cache = [
      12: {"validez": 0, "tag": "0x000", "data": [], "bit_sucio": 0}, 
      13: {"validez": 0, "tag": "0x000", "data": [], "bit_sucio": 0}, 
      14: {"validez": 0, "tag": "0x000", "data": [], "bit_sucio": 0}, 
-     15: {"validez": 0, "tag": "0x000", "data": [], "bit_sucio": 0}},
+     15: {"validez": 0, "tag": "0x000", "data": [], "bit_sucio": 0}}
 ]
 
 # Funciones auxiliares
