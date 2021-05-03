@@ -76,7 +76,8 @@ def verificarMiss(numero):
 def traer_cache(pos, index, tag):
     global cache
     print("valore(pos:{}|index:{}|tag:{})".format(pos, index, tag))
-    if cache[pos][index]["bit_sucio"] == 1: modificar_ram(index, tag, cache[pos][index]["data"])
+    if cache[pos][index]["bit_sucio"] == 1: modificar_ram(index, cache[pos][index]["tag"], cache[pos][index]["data"])
+    print("perro")
     cache[pos][index]["bit_sucio"] == 0
     cache[pos][index]["validez"] = 1
     cache[pos][index]["tag"] = tag
