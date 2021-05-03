@@ -10,6 +10,7 @@ from os import system
 def main():
     x = "0"
     ver = True
+    valor = ""
     while ver:
         print("\n")
         print("=====================================================================")
@@ -24,7 +25,7 @@ def main():
         x = input("Opcion a elegir: ")
 
         if x == "1":
-            valor = input("Escriba una posición de la memoria que quiera leer: ")
+            valor = input("Escriba una posición de la memoria que quiera leer: ").strip()
             try:
                 valor = int(valor)
                 if valor >= 0 and valor <= 2048: 

@@ -1,6 +1,11 @@
 Estos son los datos del conjunto
+<<<<<<< HEAD
 0 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
 1 {'validez': 1, 'tag': '0x000', 'data': [0, 0, 0, 0, 0, 0, 0, '28'], 'bit_sucio': 0}
+=======
+0 {'validez': 1, 'tag': '0x000', 'data': [0, '34', 0, 0, 0, 0, 0, 0], 'bit_sucio': 1}
+1 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+>>>>>>> 66982a1c25743bbd496a92818fbd637bed3562f2
 2 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
 3 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
 4 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
@@ -16,7 +21,7 @@ Estos son los datos del conjunto
 14 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
 15 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
 Estos son los datos del conjunto
-0 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+0 {'validez': 1, 'tag': '0x006', 'data': [0, 0, '78', 0, 0, 0, 0, 0], 'bit_sucio': 1}
 1 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
 2 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
 3 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}

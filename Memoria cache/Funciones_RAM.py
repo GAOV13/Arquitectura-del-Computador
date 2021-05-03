@@ -14,6 +14,7 @@ def modificar_ram(index, tag, data):
     numero2 = tag + index + "111"
     numero1, numero2 = int(numero1, 2), int(numero2, 2)
     i = 0
+    print(data)
     while(i + numero1 < numero2):
         f[i + numero1] = data[i]
         i += 1
