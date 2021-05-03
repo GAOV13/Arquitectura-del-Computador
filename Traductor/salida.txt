@@ -1,0 +1,18 @@
+lui $s0, 0x0000
+ori $s0, $s0, 0x0000
+lw $a0, 32764($s0)
+lw $a1, 28668($s0)
+sll $s7, $a1, 4
+slt $v1, $a0, $a1
+beq $v1, $0, 8
+ori $s4, $0, 0x0001
+addi $t2, $a0, 1
+beq $t2, $0, 5
+mult $a0, $a1
+mflo $a0
+sub $a1, $a1, $s4
+addi $t2, $t2, -1
+j 0x0100009
+sw $a0, 32764($s0)
+sw $a1, 28668($s0)
+jr $ra
