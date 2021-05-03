@@ -1,0 +1,48 @@
+"""
+Nombre: Memoria Caché en alto nivel.
+Autores: Luis Alberto Salazar y Guido Ernesto Salazar.
+Fecha: abril/mayo 2021.
+"""
+
+from Funciones_Cache import leer_cache, escribir_cache
+
+def main():
+    x = "0"
+    ver = True
+    while ver:
+        print("")
+        print("=====================================================================")
+        print("Bienvenido a su Memoria Caché en alto nivel!")
+        print("=====================================================================")
+        print("¿Qué desea hacer?")
+        print("1) Leer la memoria RAM.")
+        print("2) Escribir en la memoria RAM.")
+        print("3) Salir.")
+        print("=====================================================================")
+        x = input("Opcion a elegir: ")
+
+        if x == "1":
+            valor = input("Escriba una posición de la memoria que quiera leer: ")
+            try:
+                valor = int(valor)
+                if valor >= 0 and valor <= 2048: leer_cache(valor)
+                else: print("No se ingreso una posición de memoria valida")
+            except: print("No ingreso un valor numerico")
+        elif x == "2":
+            valor = input("Escriba una posición de la memoria que quiera leer: ")
+            dato = input("Ingrese un valor numerico a escribir")
+            try:
+                valor = int(valor)
+                if valor >= 0 and valor <= 2048: escribir_cache(valor, dato)
+                else: print("No se ingreso una posición de memoria valida")
+            except: print("No ingreso un valor numerico")
+        elif x == "3":
+            ver = False
+            print("")
+            print("Vuelva pronto!")
+        else:
+            print("=====================================================================")
+            print("Error, opcion no valida.")
+            print("=====================================================================")
+
+main()
