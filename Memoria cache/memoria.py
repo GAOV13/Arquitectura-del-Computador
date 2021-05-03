@@ -9,6 +9,7 @@ from Funciones_Cache import leer_cache, escribir_cache
 def main():
     x = "0"
     ver = True
+    valor = ""
     while ver:
         print("")
         print("=====================================================================")
@@ -22,15 +23,17 @@ def main():
         x = input("Opcion a elegir: ")
 
         if x == "1":
-            valor = input("Escriba una posición de la memoria que quiera leer: ")
+            valor = input("Escriba una posición de la memoria que quiera leer: ").strip()
             try:
                 valor = int(valor)
-                if valor >= 0 and valor <= 2048: 
+                if valor >= 0 and valor <= 2048:
                     print("El dato en la posición {} es {}".format(valor, leer_cache(valor)))
-                else: print("No se ingreso una posición de memoria valida")
-            except: print("No ingreso un valor numerico")
+                else: 
+                    print("No se ingreso una posición de memoria valida")
+            except: 
+                print("No ingreso un valor numerico")
         elif x == "2":
-            valor = input("Escriba una posición de la memoria que quiera leer: ")
+            valor = input("Escriba una posición de la memoria que quiera escribir: ")
             dato = input("Ingrese un valor numerico a escribir")
             try:
                 valor = int(valor)

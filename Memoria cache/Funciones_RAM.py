@@ -12,6 +12,7 @@ def modificar_ram(index, tag, data):
     numero2 = tag + index + "111"
     numero1, numero2 = int(numero1, 2), int(numero2, 2)
     i = 0
+    print(data)
     while(i + numero1 < numero2):
         f[i + numero1] = data[i]
         i += 1
@@ -25,8 +26,8 @@ def traer_datos_ram(index, tag):
     ver = False
     index = bin(index)[2:].zfill(4)
     tag = bin(int(tag, 16))[2:].zfill(9)
-    numero1 = index + tag + "000"
-    numero2 = index + tag + "111"
+    numero1 = tag + index + "000"
+    numero2 = tag + index + "111"
     numero1, numero2 = int(numero1, 2), int(numero2, 2)
     M = []
     pos = 0

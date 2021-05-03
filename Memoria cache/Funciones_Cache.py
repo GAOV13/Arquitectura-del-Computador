@@ -75,6 +75,7 @@ def verificarMiss(numero):
 
 def traer_cache(pos, index, tag):
     global cache
+    print("valore(pos:{}|index:{}|tag:{})".format(pos, index, tag))
     if cache[pos][index]["bit_sucio"] == 1: modificar_ram(index, tag, cache[pos][index]["data"])
     cache[pos][index]["bit_sucio"] == 0
     cache[pos][index]["validez"] = 1
@@ -87,10 +88,13 @@ def escribir_cache(numero, dato):
     global cache
     pos, index, offset = general(numero)
     cache[pos][index]["data"][offset] = dato
+    cache[pos][index]["bit_sucio"] = 1
 
 def leer_cache(numero):
     global cache
+    print(type(numero))
     pos, index, offset = general(numero)
+    print(cache[pos][index]["data"])
     return cache[pos][index]["data"][offset]
 
 def general(numero):
