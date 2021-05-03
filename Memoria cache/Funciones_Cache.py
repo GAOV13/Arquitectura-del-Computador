@@ -92,22 +92,25 @@ def escribir_cache(numero, dato):
     pos, index, offset = general(numero)
     cache[pos][index]["data"][offset] = dato
     cache[pos][index]["bit_sucio"] = 1
+    ver_cache()
 
 def leer_cache(numero):
     global cache
-    print(type(numero))
     pos, index, offset = general(numero)
-    print(cache[pos][index]["data"])
+    ver_cache()
     return cache[pos][index]["data"][offset]
 
 def general(numero):
     global cache
     ver, pos, index, tag, offset = verificarMiss(numero)
     if not ver: traer_cache(pos, index, tag)
-    f = open("output.txt", "w")
+    return pos, index, offset
+
+def ver_cache():
+    global cache
+    f = open("Cache.txt", "w")
     for conjunto in cache:
         f.write("Estos son los datos del conjunto\n")
         for posicion in conjunto:
             f.write(str(posicion) + " " + str(conjunto[posicion]) + "\n")
     f.close()
-    return pos, index, offset

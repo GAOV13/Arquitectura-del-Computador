@@ -8,8 +8,6 @@ Fecha: abril/mayo 2021.
 
 def modificar_ram(index, tag, data):
     f = open("RAM.txt", "r")
-    print(data)
-    print(type(index))
     index = bin(index)[2:].zfill(4)
     tag = bin(int(tag, 16))[2:].zfill(9)
     numero1 = tag + index + "000"
