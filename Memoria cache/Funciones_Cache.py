@@ -55,6 +55,8 @@ cache = [
      15: {"validez": 0, "tag": "0x000", "data": [], "bit_sucio": 0}},
 ]
 
+# Funciones auxiliares
+
 def transformacion(numero):
     numero = bin(numero)[2:].zfill(16)
     index = int(numero[16-7:16-3], 2) 
