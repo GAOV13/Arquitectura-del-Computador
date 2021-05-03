@@ -1,8 +1,10 @@
 """
-Nombre: Funciones de la Memoria Caché.
+Nombre: Funciones de la Memoria RAM.
 Autores: Luis Alberto Salazar y Guido Ernesto Salazar.
 Fecha: abril/mayo 2021.
 """
+
+# Funciones RAM
 
 def modificar_ram(index, tag, data):
     f = open("RAM.txt", "r")
