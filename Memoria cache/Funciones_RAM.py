@@ -55,13 +55,14 @@ def traer_datos_ram(index, tag):
     pos = 0
     for i in f:
         if pos == numero1:
-            M.append(int(i))
+            M.append(i.strip())
             ver = True
-        elif ver and pos != numero2: M.append(int(i))
+        elif ver and pos != numero2: M.append(i.strip())
         elif pos == numero2:
-            M.append(int(i))
+            M.append(i.strip())
             ver = False
             break
         pos += 1
     f.close()
+    print(M)
     return M

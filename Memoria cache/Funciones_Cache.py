@@ -5,7 +5,7 @@ Fecha: abril/mayo 2021.
 """
 
 # Total de vias = 2
-# Bloques por conjuntos = 32/2 = 16
+# Bloques por conjuntos = 32/2 = #16 conjuntos 
 # Total de bloques = 32
 # Offset = 3
 # Index = 4
