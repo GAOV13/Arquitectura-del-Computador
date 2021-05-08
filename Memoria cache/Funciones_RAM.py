@@ -3,26 +3,20 @@ Nombre: Funciones de la Memoria RAM.
 Autores: Luis Alberto Salazar y Guido Ernesto Salazar.
 Fecha: abril/mayo 2021.
 """
+import random
+import string
 
 # Funciones RAM
 
-# def modificar_ram1(index, tag, data):
-#     f = open("RAM.txt", "r")
-#     index = bin(index)[2:].zfill(4)
-#     tag = bin(int(tag, 16))[2:].zfill(9)
-#     numero1 = tag + index + "000"
-#     numero2 = tag + index + "111"
-#     numero1, numero2 = int(numero1, 2), int(numero2, 2)
-#     i = 0
-#     while(i + numero1 < numero2):
-#         print("error?")
-#         f[i + numero1] = data[i]
-#         print("error?")
-#         i += 1
-
-#     o = open("RAM.txt", "w")
-#     o.writelines(f)
-#     o.close()
+def inicializar_ram():
+    f = open("RAM.txt", "w")
+    letters = string.ascii_lowercase
+    string = ''.join(random.choice(letters) for i in range(8))
+    for i in range(0, 2048):
+        f.write(string + '\n')
+        string = ''.join(random.choice(letters) for i in range(8))
+    f.write(string)
+    f.close()
 
 def modificar_ram(index, tag, data):
     f = open("RAM.txt", "r")
