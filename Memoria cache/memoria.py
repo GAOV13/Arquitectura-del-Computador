@@ -31,11 +31,8 @@ def main():
             valor = input("Escriba una posición de la memoria que quiera leer: ").strip()
             try:
                 valor = int(valor)
-                if valor >= 0 and valor <= 2048: 
+                if valor >= 0 and valor <= 2048:
                     print("El dato en la posición [{}] es {}".format(valor, leer_cache(valor)))
-                    print("=====================================================================")
-                    print("Tasa de desacierto (Miss ratio): {}".format(llamarMiss()))
-                    print("=====================================================================")
                 else: print("No se ingreso una posición de memoria valida")
             except: print("No ingreso un valor numerico!")
         elif x == "2":
@@ -49,9 +46,12 @@ def main():
         elif x == "3": system("cls")
         elif x == "4":
             ver = False
+            print("=====================================================================")
+            print("Tasa de desacierto (Miss ratio): {}".format(llamarMiss()))
+            print("=====================================================================")
             print("")
             print("Vuelva pronto!")
-        elif x = "Drink Torrent"
+        elif x == "Drink Torrent":
             inicializar_ram()
         else:
             print("=====================================================================")

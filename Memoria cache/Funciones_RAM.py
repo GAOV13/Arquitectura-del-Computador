@@ -9,16 +9,34 @@ import string
 # Funciones RAM
 
 def inicializar_ram():
+    """
+    Se encarga de inicializar toda las posiciones de la memoria RAM con distintos
+    valores del alfabeto.
+    Entradas:
+        ninguna.
+    Salidas:
+        ninguna.
+    """
     f = open("RAM.txt", "w")
     letters = string.ascii_lowercase
-    string = ''.join(random.choice(letters) for i in range(8))
+    palabra = ''.join(random.choice(letters) for i in range(8))
     for i in range(0, 2048):
-        f.write(string + '\n')
-        string = ''.join(random.choice(letters) for i in range(8))
-    f.write(string)
+        f.write(palabra + '\n')
+        palabra = ''.join(random.choice(letters) for i in range(8))
+    f.write(palabra)
     f.close()
 
 def modificar_ram(index, tag, data):
+    """
+    Se encarga de aplicar la política de Right-Back en la memoria RAM, cambiando
+    los valores que tiene la posición indicada, en este caso cambia los valores
+    del rango de datos que tiene asignado.
+    Entradas:
+        el índice de la memoria caché, el tag del bloque y el rango de datos que
+        tiene arraigado.
+    Salidas:
+        ninguna.
+    """
     f = open("RAM.txt", "r")
     lista = f.readlines()
     f.close()
@@ -38,6 +56,16 @@ def modificar_ram(index, tag, data):
     f.close()
 
 def traer_datos_ram(index, tag):
+    """
+    Se encarga de almacenar la información que hay en un bloque de memoria
+    en una lista.
+    Entradas:
+        index: es el numero de conjunto en donde deberia ir la información
+        tag: es el identificador del bloque.
+        (Juntos crean el Block Adrres (BA))
+    Salida:
+        M: una lista de los datos del bloque que hacen referencia al BA
+    """
     f = open("RAM.txt", "r")
     ver = False
     index = bin(index)[2:].zfill(4)
@@ -58,5 +86,4 @@ def traer_datos_ram(index, tag):
             break
         pos += 1
     f.close()
-    print(M)
     return M
