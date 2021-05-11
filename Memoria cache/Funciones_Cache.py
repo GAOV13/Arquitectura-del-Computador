@@ -66,7 +66,10 @@ def llamarMiss():
         el miss ratio.
     """
     global totales, hits
-    total = hits / totales
+    try:
+        total = hits / totales
+    except:
+        total = 0
     hratio = 1 - total
     return hratio
 

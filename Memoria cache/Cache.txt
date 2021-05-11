@@ -1,0 +1,108 @@
+----------------------------------------------------------------------------------------------------
+En el numero de consulta 1 se hizo la instrucción Leer la posicion=25 y la cache es:
+Estos son los datos en la via 1
+0 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+1 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+2 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+3 {'validez': 1, 'tag': '0x000', 'data': ['datrilov', 'glmvmnwt', 'hhqjvkei', 'omecmdmr', 'tkdfhxhv', 'djyqmuuq', 'odzabpdu', 'zftkblqn'], 'bit_sucio': 0}
+4 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+5 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+6 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+7 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+8 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+9 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+10 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+11 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+12 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+13 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+14 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+15 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+Estos son los datos en la via 2
+0 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+1 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+2 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+3 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+4 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+5 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+6 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+7 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+8 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+9 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+10 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+11 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+12 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+13 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+14 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+15 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+----------------------------------------------------------------------------------------------------
+En el numero de consulta 2 se hizo la instrucción escribir el dato=48 en la posicion=25 y la cache es:
+Estos son los datos en la via 1
+0 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+1 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+2 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+3 {'validez': 1, 'tag': '0x000', 'data': ['datrilov', '48', 'hhqjvkei', 'omecmdmr', 'tkdfhxhv', 'djyqmuuq', 'odzabpdu', 'zftkblqn'], 'bit_sucio': 1}
+4 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+5 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+6 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+7 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+8 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+9 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+10 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+11 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+12 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+13 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+14 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+15 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+Estos son los datos en la via 2
+0 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+1 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+2 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+3 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+4 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+5 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+6 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+7 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+8 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+9 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+10 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+11 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+12 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+13 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+14 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+15 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+----------------------------------------------------------------------------------------------------
+En el numero de consulta 3 se hizo la instrucción Leer la posicion=25 y la cache es:
+Estos son los datos en la via 1
+0 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+1 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+2 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+3 {'validez': 1, 'tag': '0x000', 'data': ['datrilov', '48', 'hhqjvkei', 'omecmdmr', 'tkdfhxhv', 'djyqmuuq', 'odzabpdu', 'zftkblqn'], 'bit_sucio': 1}
+4 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+5 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+6 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+7 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+8 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+9 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+10 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+11 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+12 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+13 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+14 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+15 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+Estos son los datos en la via 2
+0 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+1 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+2 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+3 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+4 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+5 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+6 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+7 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+8 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+9 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+10 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+11 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+12 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+13 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+14 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
+15 {'validez': 0, 'tag': '0x000', 'data': [], 'bit_sucio': 0}
