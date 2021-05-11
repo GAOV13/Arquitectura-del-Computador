@@ -3,7 +3,7 @@ Nombre: Memoria Caché en alto nivel.
 Autores: Luis Alberto Salazar y Guido Ernesto Salazar.
 Fecha: abril/mayo 2021.
 """
-
+import generadorPosiciones
 from Funciones_Cache import leer_cache, escribir_cache, llamarMiss
 from Funciones_RAM import inicializar_ram
 from os import system
@@ -11,6 +11,7 @@ from os import system
 def main():
     f = open("Cache.txt", "w")
     f.close()
+    generadorPosiciones.generar()
     x = "3"
     ver = True
     valor = ""
