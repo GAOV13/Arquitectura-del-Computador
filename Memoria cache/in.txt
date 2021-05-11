@@ -27,8 +27,3 @@
 1
 258
 4
-
-//Aqui yacen otros casos
-2
-25
-467

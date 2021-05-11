@@ -120,7 +120,7 @@ def traer_cache(pos, index, tag):
     """
     global cache
     if cache[pos][index]["bit_sucio"] == 1: modificar_ram(index, cache[pos][index]["tag"], cache[pos][index]["data"])
-    cache[pos][index]["bit_sucio"] == 0
+    cache[pos][index]["bit_sucio"] = 0
     cache[pos][index]["validez"] = 1
     cache[pos][index]["tag"] = tag
     cache[pos][index]["data"] = traer_datos_ram(index, tag)
