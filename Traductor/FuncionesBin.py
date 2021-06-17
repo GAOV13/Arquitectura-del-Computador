@@ -203,7 +203,7 @@ def verificacion_semantica(lista_datos):
                 try: caract = int(caract, 16)
                 except: caract = caract
             if type(caract) != int: ver = False
-            elif (instruccion in store_y_load) and caract % 4 != 0: ver = False
+            # elif (instruccion in store_y_load) and caract % 4 != 0: ver = False
         elif lista_datos[i][0] != '$': ver = False
         i += 1
     if ver and (instruccion not in no_modifican_valores) and lista_datos[0] == "$0":
