@@ -164,5 +164,5 @@ def hexaAssem():
           f.close()
     except:
       print("=====================================================================")
-      print("Hubo un fallo en el programa"
+      print("Hubo un fallo en el programa")
       print("=====================================================================")
