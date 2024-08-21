@@ -130,34 +130,39 @@ def traduccionHex(traduccion):
 
 def hexaAssem():
     global instrucciones_correctas, instrucciones_erroneas
-    instrucciones_correctas = []
-    instrucciones_erroneas = [] 
-    system("cls")
-    ver = True
-    print("=====================================================================")
-    archivo = str(input("Ingrese el nombre del archivo (sin extension): "))
-    try: f = open("{}.txt".format(archivo), "r")
+    try:
+      instrucciones_correctas = []
+      instrucciones_erroneas = [] 
+      system("cls")
+      ver = True
+      print("=====================================================================")
+      archivo = str(input("Ingrese el nombre del archivo (sin extension): "))
+      try: f = open("{}.txt".format(archivo), "r")
+      except:
+          ver = False
+          print("=====================================================================")
+          print("Hubo un error a la hora de abrir el archivo.")
+          print("Volviendo al inicio")
+      print("=====================================================================")
+      if(ver):
+          i = 1
+          for linea in f:
+              traduccion = str(bin(int(linea, 16)))[2:].zfill(32)
+              cadena = traduccionHex(traduccion)
+              instruccion, flag_sintaxis, flag_semantica = lectura(cadena)
+  
+              if not flag_sintaxis: 
+                  instrucciones_erroneas.append(("Error de sintaxis en linea {}".format(i), linea))
+              if not flag_semantica:
+                  instrucciones_erroneas.append(("Error semantico en linea {}".format(i), linea))
+              else:
+                  instrucciones_correctas.append(cadena)
+              i += 1
+          
+          if(len(instrucciones_erroneas) > 0): errores()
+          else: salida()
+          f.close()
     except:
-        ver = False
-        print("=====================================================================")
-        print("Hubo un error a la hora de abrir el archivo.")
-        print("Volviendo al inicio")
-    print("=====================================================================")
-    if(ver):
-        i = 1
-        for linea in f:
-            traduccion = str(bin(int(linea, 16)))[2:].zfill(32)
-            cadena = traduccionHex(traduccion)
-            instruccion, flag_sintaxis, flag_semantica = lectura(cadena)
-
-            if not flag_sintaxis: 
-                instrucciones_erroneas.append(("Error de sintaxis en linea {}".format(i), linea))
-            if not flag_semantica:
-                instrucciones_erroneas.append(("Error semantico en linea {}".format(i), linea))
-            else:
-                instrucciones_correctas.append(cadena)
-            i += 1
-        
-        if(len(instrucciones_erroneas) > 0): errores()
-        else: salida()
-        f.close()
+      print("=====================================================================")
+      print("Hubo un fallo en el programa"
+      print("=====================================================================")
